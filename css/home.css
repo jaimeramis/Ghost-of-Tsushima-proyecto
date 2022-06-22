@@ -1,0 +1,422 @@
+/***REGLAS GENERALES***/
+.marco{
+    width: 320px;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.logo-nav{
+    width: 80%
+}
+
+.mobile_menu{
+    width: 34px;
+    height: 34px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu_mob{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2000;
+    display: none;
+    padding: 20px;
+}
+
+.menu_mob a{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.menu_mob a:focus{
+    background-color: #c61e14;
+    font-weight: bold;
+}
+
+.menu_close{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu_desktop{
+    display: none;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1000;
+  }
+
+.s1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/***FIN REGLAS GENERALES***/
+
+/***REGLAS ESPECÍFICAS***/
+
+.logo-nav a img{
+    width: 80px;
+}
+
+.languages{
+    display: none;
+}
+
+.languages_mob{
+    display: flex;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content img{
+    width: 276px;
+}
+
+.main-content h1{
+    color: #fff;
+    margin: 34px 0px;
+    letter-spacing: 2px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+    /***BOTON PRINCIPAL***/
+
+    .main-content h4{
+        background-color: #c62316;
+        color: #fff;
+        padding: 14px 16px;
+        letter-spacing: 2px;
+        position: relative;
+        overflow: hidden;
+    }
+    /***FIN BOTON PRINCIPAL***/
+
+/***FIN REGLAS ESPECÍFICAS***/
+
+/***RESPONSIVE***/
+
+/***MOBILE 320px - 375px***/
+@media screen and (min-width:320px){
+    .marco{
+        width: 100%;
+    }
+
+    .main-content h1 {
+        margin: 34px 30px;
+        font-size: 24px;
+    }
+
+    .main-content img {
+        width: 276px;
+    }
+}
+/***END MOBILE 320px - 375px***/
+
+/***MOBILE 375px - 536px***/
+@media screen and (min-width:375px){
+    .menu_close{
+        padding: 5px 11px;
+    }
+
+    .main-content img {
+        width: 328px;
+    }
+}
+/***END MOBILE 375px - 536px***/
+
+/***IPAD 767px - 1016px ***/
+@media screen and (min-width:767px){
+    .logo-nav {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-nav a img {
+        width: 90px;
+    }
+
+    .main-content h1 {
+        margin: 54px 0px;
+        font-size: 26px;
+    }
+
+    .main-content h4 {
+        padding: 16px 24px;
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+
+    .main-content img {
+        width: 690px;
+    }
+
+    .mobile_menu{
+        display: none;
+    }
+
+    .menu_desktop{
+        width: 60%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .menu_desktop a{
+        font-size: 16px;
+        color: #fff;
+        padding: 0px 5%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        overflow: hidden;
+        position: relative;
+        line-height: 1.9;
+    }
+
+    .menu_desktop a:active{
+        color: #c62316;
+    }
+
+    .languages{
+        width: 20%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    .languages a{
+        color: #fff;
+        padding: 0px 3%;
+        text-shadow: rgba(0, 0, 0, 0.05) 0 0 4px;
+        font-weight: bold;
+    }
+    .languages a:active{
+        color: #c62316;
+    }
+    
+    .active{
+        color: #c62316 !important;
+    }
+}
+/***END IPAD 767px - 1016px***/
+
+/***DESKTOP 1280px***/
+@media screen and (min-width:1280px){
+    .logo-nav {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-nav a img {
+        width: 140px;
+    }
+
+    .main-content h1 {
+        margin: 54px 0px;
+        font-size: 26px;
+    }
+
+    .main-content h4 {
+        padding: 16px 24px;
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+
+    .main-content img {
+        width: 690px;
+    }
+
+    .mobile_menu{
+        display: none;
+    }
+
+    .menu_mob{
+        display: none;
+    }
+
+    .menu_desktop{
+        width: 60%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .menu_desktop a{
+        font-size: 16px;
+        color: #fff;
+        padding: 0px 5%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        overflow: hidden;
+        position: relative;
+        line-height: 1.9;
+    }
+
+    .menu_desktop a:active{
+        color: #c62316;
+    }
+
+    .menu_desktop a:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background-color: #c62316;
+        left: 45%;
+        bottom: 0;
+        transition: all .3s;
+        opacity: 0.7;
+        transform: translate(20%);
+    }
+
+    .menu_desktop a:hover:before {
+        width: 70%;
+        left: 0;
+    }
+
+    .languages{
+        width: 20%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    .languages a{
+        color: #fff;
+        padding: 0px 3%;
+        text-shadow: rgba(0, 0, 0, 0.05) 0 0 4px;
+        font-weight: bold;
+    }
+    .languages a:active{
+        color: #c62316;
+    }
+    
+    .active{
+        color: #c62316 !important;
+    }
+
+    /***IDIOMAS HOVER***/
+
+    .languages a{
+        color: #fff;
+        padding: 0px 2%;
+        text-shadow: rgba(0, 0, 0, 0.05) 0 0 4px;
+        font-weight: bold;
+    }
+
+    .languages a:hover{
+        color: #c62316;
+        transition: all .2s;
+    }
+
+    /***FIN IDIOMAS HOVER***/
+
+    /***BOTON PRINCIPAL***/
+
+    .main-content h4{
+        background-color: #c62316;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .main-content h4:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -200%;
+        width: 200%;
+        height: 100%;
+        transform: skewX(-20deg);
+        background-image: linear-gradient(to right, transparent, rgba(255,255,255,0.5), transparent);
+    }
+    .main-content h4:hover:after {
+        animation: shine 1.6s ease;
+    }
+    .main-content h4:active {
+        transform: translateY(1px);
+    }
+
+    @-moz-keyframes shine {
+    100% {
+        left: 200%;
+    }
+    }
+    @-webkit-keyframes shine {
+    100% {
+        left: 200%;
+    }
+    }
+    @-o-keyframes shine {
+    100% {
+        left: 200%;
+    }
+    }
+    @keyframes shine {
+    100% {
+        left: 200%;
+    }
+    }
+    /***FIN BOTON PRINCIPAL***/
+}
+
+/***END DESKTOP 1280px***/
+/***FIN RESPONSIVE***/

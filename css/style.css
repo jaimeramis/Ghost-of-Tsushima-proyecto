@@ -1,0 +1,54 @@
+/***PARÁMETROS***/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /***outline: 2px dashed blue;***/
+}
+/***FIN PARÁMETROS***/
+/***NORMALIZADORES***/
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+i{
+    color: #fff;
+}
+
+h1,h2,h3,h4,h5{
+    color: #fff;
+}
+
+p{
+    color: #fff;  
+}
+/***FIN NORMALIZADORES***/
+/***REGLAS RECURSIVAS***/
+.history-s2-container{
+    width: 100%;
+    background-color: #e7e7e7;
+}
+
+.change-color{
+    color: #c62316;
+    display: inline;
+    font-weight: bold;
+}
+
+.d-block{
+	display: block !important;
+}
+.header_color{
+    background-color:rgba(0, 0, 0, 0.8);
+}
+/***FIN REGLAS RECURSIVAS***/
